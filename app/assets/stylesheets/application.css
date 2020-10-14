@@ -1,0 +1,268 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* SPLASH PAGE */
+ .nav-bar {
+   background-color: rgb(177, 201, 202);
+ }
+
+ .header-wrapper {
+  box-sizing:border-box;
+  display:flex;
+  justify-content: space-between;
+  font-size:14px;
+  font-style:normal;
+  font-weight:100;
+  height:47px;
+  left:0px;
+  line-height:23.1px;
+  position:sticky;
+  top:0px;
+  width:auto;
+  z-index:5;
+
+ }
+ 
+ .nav-bar-categories {
+  position: relative;
+  align-items:center;
+  box-sizing:border-box;
+  display:flex;
+  font-size:12px;
+  height:36px;
+  line-height:23.1px;
+ }
+
+ .list-categories {
+  box-sizing:border-box;
+  display: flex;
+  justify-content: space-between;
+  font-family:"Nunito Sans", sans-serif;
+  font-size:14px;
+  height:35px;
+  line-height:23.1px;
+  list-style-type:none;
+
+ }
+
+ .nav-bar-right > ul{
+   box-sizing: border-box;
+   display: flex;
+   list-style-type:none;
+   margin-top: 0px;
+   justify-content: space-between;
+   
+ }
+
+  /* NAV DROPDOWN */
+ .options-list {
+   display: none;
+   position: absolute;
+ }
+ .nav-bar-categories:hover .nav-dropdown-content {
+   display: block;
+ }
+
+ .splash-carousel{
+   padding: 200px;
+ }
+
+ .splash-footer {
+   margin-bottom: 300px;
+ }
+
+
+
+
+
+
+
+
+
+
+ .form-container {
+   margin: auto;
+   color: rgb(28, 27, 27);
+   box-sizing: border-box;
+   display: flex;
+   width: 400px;
+   height: 325px;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   margin-top: 0px;
+   text-align: left;
+   text-size-adjust: 100%;
+   
+  }
+
+  .form-header {
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .form-header-title {
+    box-sizing:border-box;
+    color:rgb(28, 27, 27);
+    display:block;
+    font-family:Montserrat, sans-serif;
+    font-size:20px;
+    font-style:normal;
+    font-weight:500;
+    height:24px;
+    letter-spacing:4px;
+    line-height:24px;
+    margin-block-end:7px;
+    margin-block-start:0px;
+    margin-bottom:7px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-top:0px;
+    text-align:center;
+    text-size-adjust:100%;
+    text-transform:uppercase;
+    transition-delay:0s;
+    transition-duration:0.2s;
+    transition-property:color;
+    transition-timing-function:ease-in-out;
+    width:400px;
+  }
+
+  .login-form-instructions {
+    box-sizing:border-box;
+    color:rgb(28, 27, 27);
+    display:block;
+    font-family:"Nunito Sans", sans-serif;
+    font-size:14px;
+    font-style:normal;
+    font-weight:400;
+    height:23px;
+    line-height:23.1px;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-top:0px;
+    text-align:center;
+    text-size-adjust:100%;
+  }
+
+  .login-form-item {
+    box-sizing:border-box;
+    color:rgb(28, 27, 27);
+    display:block;
+    font-family:"Nunito Sans", sans-serif;
+    font-size:14px;
+    font-style:normal;
+    font-weight:400;
+    height:45px;
+    line-height:23.1px;
+    margin-bottom:15px;
+    position:relative;
+    text-align:left;
+    text-size-adjust:100%;
+  }
+
+  .login-form-input {
+    appearance:none;
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:rgba(0, 0, 0, 0);
+    background-image:none;
+    background-origin:padding-box;
+    background-position-x:0%;
+    background-position-y:0%;
+    background-repeat-x:;
+    background-repeat-y:;
+    background-size:auto;
+    border-bottom-color:rgb(221, 221, 221);
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-image-outset:0;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgb(221, 221, 221);
+    border-left-style:solid;
+    border-left-width:1px;
+    border-right-color:rgb(221, 221, 221);
+    border-right-style:solid;
+    border-right-width:1px;
+    border-top-color:rgb(221, 221, 221);
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    border-top-style:solid;
+    border-top-width:1px;
+    box-sizing:border-box;
+    color:rgb(51, 51, 51);
+    cursor:text;
+    display:block;
+    font-family:"Nunito Sans", sans-serif;
+    font-size:14px;
+    font-stretch:100%;
+    font-weight:400;
+    height:45px;
+    letter-spacing:normal;
+    line-height:normal;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    overflow-x:visible;
+    overflow-y:visible;
+    padding-bottom:12px;
+    padding-left:14px;
+    padding-right:14px;
+    padding-top:12px;
+    resize:none;
+    width:400px;
+    word-spacing:0px;
+    writing-mode:horizontal-tb;
+  }
+
+  .login-floating-label {
+
+
+    line-height:normal;
+    margin-bottom:7px;
+    opacity:0;
+    padding-bottom:0px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:0px;
+    position:absolute;
+    text-align:left;
+    text-size-adjust:100%;
+    transform:matrix(1, 0, 0, 1, 0, 3);
+    transition-delay:0s;
+    transition-duration:0.3s;
+    transition-property:all;
+    transition-timing-function:ease-in-out;
+  }
+
+  .login-button {
+   background-color: #3B8CA5;
+   width: 400px;
+   height: 43px;
+   color: azure;
+   font-family:Montserrat, sans-serif;
+  }
