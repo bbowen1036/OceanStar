@@ -15,6 +15,14 @@
  */
 
  /* SPLASH PAGE */
+
+
+ *{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+ }
+
  .nav-bar {
    background-color: rgb(177, 201, 202);
    height: 740px;
@@ -406,3 +414,5 @@
    color: azure;
    font-family:Montserrat, sans-serif;
   }
+
+  

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from '../carousel/carousel'
 
 const Greeting = ({currentUser, logout}) => {
 
@@ -186,7 +187,7 @@ const Greeting = ({currentUser, logout}) => {
             text
           </div>
 
-          
+          <Carousel/>
 
         </section>
         <footer className="splash-footer">
