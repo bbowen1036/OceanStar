@@ -6,7 +6,7 @@ export default class Modal extends React.Component {
     super(props);
 
     this.state = {
-      seen: false
+      seen: true
     };
 
     this.togglePop = this.togglePop.bind(this)
@@ -22,7 +22,7 @@ export default class Modal extends React.Component {
     return (
       <div>
         <div onClick={this.togglePop} className="btn">
-          <button >New User?</button>
+          <button >Modal</button>
         </div>
 
         {this.state.seen ? <PopUp toggle={this.togglePop} /> : null}

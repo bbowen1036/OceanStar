@@ -4,9 +4,6 @@ import Carousel from '../carousel/carousel';
 
 const Splash = ({currentUser, logout}) => {
 
-
-
-
   return (
 
     <header className="nav-bar">

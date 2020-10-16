@@ -8,44 +8,28 @@ export default class PopUp extends Component {
   };
 
   render() {
-
     return (
-
     <div>
-
       <div className="modal-container">
-        <div className="modal-face"
-        >
+        <div className="modal-face">
           <h2><span>Hi There &#128075;</span></h2>
           <button>&#x2C5;</button>
           <p>
-            <span>
-              Welcome to Ocean Star Seafood. Please send me a message with any questions you have!
-            </span>
+            <span>Welcome to Ocean Star Seafood. Please send me a message with any questions you have!</span>
           </p>
           <div>
-            <image></image>
+            {/* <image></image> */}
           </div>
         </div>
         <div className="modal-input">
-          <div>
-            <textarea>
-
-            </textarea>
-          </div>
+          <div><textarea className="txt-area"></textarea></div>
         </div>
 
-        <button>&#10146;</button>
-
+        <button className="modal-collapse">&#10146;</button>
       </div>
-
-     
-
-
     </div>
-
     );
-  }
-}
+  };
+};
 
 

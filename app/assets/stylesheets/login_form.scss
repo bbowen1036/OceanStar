@@ -1,6 +1,7 @@
 .form-container {
-  
-  
+  position: relative;
+  top: 200px;
+  left: auto;
   color: rgb(28, 27, 27);
   // box-sizing: border-box;
   display: flex;
@@ -115,6 +116,7 @@
 
  .login-form-input {
    appearance:none;
+   outline: none;
    background-attachment:scroll;
    background-clip:border-box;
    background-color:rgba(0, 0, 0, 0);
@@ -197,6 +199,13 @@
   height: 43px;
   color: azure;
   font-family:Montserrat, sans-serif;
+  // outline: none;
+}
+
+.login-button:hover {
+  transform: 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: rgb(253, 253, 252);
+  color: black;
  }
  
 .form-hint{
