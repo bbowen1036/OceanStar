@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 class SessionForm extends React.Component {
   constructor(props){
@@ -34,51 +36,61 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.processForm(this.state)
-    .then(() => this.props.history.push('/fish'))
+    .then(() => this.props.history.push('/'))
   }
 
   render() {
     return (
-      <div className="form-container">
-        <form onSubmit={this.handleSubmit}>
+      <div className="login-page-container">
+        
 
-          <header className="form-header">
-            <h1 className="form-header-title">LOGIN</h1>
-            <p className="login-form-instructions">Please enter your e-mail and password:</p>
-          </header>
+        <div className="form-container">
+          <form onSubmit={this.handleSubmit}>
 
-          <div className="login-form-item">
-            <label className="login-floating-label">Username</label>
-            <input 
-              className="login-form-input"
-              type="text" 
-              placeholder="Username" 
-              onChange={this.update('username')} 
-            />
-          </div>
-          <div className="login-form-item">
-            <label className="login-floating-label">Email</label>
-            <input 
-              className="login-form-input"
-              type="email" 
-              placeholder="Email" 
-              onChange={this.update('email')} 
-            />
-          </div>
-          <div className="login-form-item">
-            <label className="login-floating-label">Password</label>
-            <input 
-              className="login-form-input"
-              type="password" 
-              placeholder="Password" 
-              onChange={this.update('password')} 
-            />
-          </div>
+            <header className="form-header">
+              <h1 className="form-header-title">LOGIN</h1>
+              <p className="login-form-instructions">Please enter your e-mail and password:</p>
+            </header>
 
-          <button className="login-button">Login</button>
-        </form>
+            <div className="login-form-item">
+              <label className="login-floating-label">Username</label>
+              <input 
+                className="login-form-input"
+                type="text" 
+                placeholder="Username" 
+                onChange={this.update('username')} 
+              />
+            </div>
+            <div className="login-form-item">
+              <label className="login-floating-label">Email</label>
+              <input 
+                className="login-form-input"
+                type="email" 
+                placeholder="Email" 
+                onChange={this.update('email')} 
+              />
+            </div>
+            <div className="login-form-item">
+              <label className="login-floating-label">Password</label>
+              <input 
+                className="login-form-input"
+                type="password" 
+                placeholder="Password" 
+                onChange={this.update('password')} 
+              />
+            </div>
 
-      </div>
+            <button className="login-button">Login</button>
+            <div className="form-hint">
+              <span> Don't have an account?</span>
+              <Link to="/signup">Create One</Link>
+            </div>
+
+          </form>
+
+        </div>
+
+       </div>
     )
   }
 };

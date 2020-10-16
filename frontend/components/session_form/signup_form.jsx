@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class SignupForm extends React.Component {
   constructor(props){
     super(props);
@@ -37,6 +38,7 @@ class SignupForm extends React.Component {
 
   render() {
     return (
+      <div>
       <div className="form-container">
         <form onSubmit={this.handleSubmit}>
 
@@ -81,6 +83,7 @@ class SignupForm extends React.Component {
           <button className="login-button">CREATE MY ACCOUNT</button>
         </form>
 
+      </div>
       </div>
     )
   }

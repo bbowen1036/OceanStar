@@ -7,9 +7,14 @@ import {
   HashRouter
 } from 'react-router-dom';
 
-import GreetingContainer from './greeting/greeting_container';
+import SplashContainer from './splash/splash_container'
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
+import Error from './error/error';
+import Modal from './modal/modal';
+
+import Navbar from './navbar/navbar';
+
 import { 
   AuthRoute,
   ProtectedRoute
@@ -18,13 +23,16 @@ import {
 const App = () => {
   return (
     <div>
-      {/* <header>
-        <h1> OceanStar Seafood </h1>
-      </header> */}
+      <Navbar />
+      <Switch>
 
-      <Route path="/" component={GreetingContainer}/>
-      <AuthRoute path="/signup" component={SignUpFormContainer} />
-      <Route path="/login" component={LogInFormContainer} />
+        <Route path='/error' component={Error} />
+        <Route exact path="/" component={SplashContainer}/>
+        <Route exact path="/login" component={LogInFormContainer} />
+        <Route exact path="/signup" component={SignUpFormContainer} />
+        <Redirect to="/error"/>
+      </Switch>
+      <Modal />
     </div>
   )
 }; 
