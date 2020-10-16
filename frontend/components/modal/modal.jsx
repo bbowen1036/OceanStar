@@ -1,47 +1,32 @@
-import React from 'react';
-import ReactDom from 'react-dom';
+import React from "react";
+import PopUp from "./modal";
 
-
-import { closeModal, openModal } from '../../actions/modal_actions';
-import { connect } from 'react-redux';
-
-class Modal extends React.Component{
+export default class Modal extends React.Component {
   constructor(props){
     super(props);
-    this.state = {isToggleOn: false};
 
-    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      seen: false
+    };
+
+    this.togglePop = this.togglePop.bind(this)
   }
 
+  togglePop() {
+    this.setState({
+      seen: !this.state.seen
+    });
+  };
 
-  handleClick() {
-    this.setState({isToggleOn: !this.state.isToggleOn})
-  }
-  
-  
-  
-  render(){
-    
-    return(
-      
-    <div>
-
-
-
+  render() {
+    return (
       <div>
-        <button onClick={this.handleClick} className="modalBtn">
-          {this.state.isToggleOn ? 'ONNN' : 'OFF'}
-        </button>  
+        <div onClick={this.togglePop} className="btn">
+          <button >New User?</button>
+        </div>
+
+        {this.state.seen ? <PopUp toggle={this.togglePop} /> : null}
       </div>
-
-       
-      
-    </div>
-      
-    )
+    );
   }
-
-
 }
-export default Modal
-
