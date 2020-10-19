@@ -1,0 +1,112 @@
+.product-section{
+  border: 2px solid chartreuse;
+  // display: flex;
+  height: 664px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.product-list{
+  border: 2px solid blue;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+
+  height:450.75px;
+
+  // color:rgb(28, 27, 27);
+  // cursor:grab;
+  // display:block;
+  // font-family:"Nunito Sans", sans-serif;
+  // font-size:14px;
+  // font-style:normal;
+  // font-weight:400;
+
+  // left:0px;
+  // line-height:23.1px;
+  // position:absolute;
+  // text-align:left;
+  // text-size-adjust:100%;
+  // transform:matrix(1, 0, 0, 1, 0, 0);
+  // user-select:none;
+  // visibility:visible;
+  // width:923px;
+  // -webkit-font-smoothing:antialiased;
+}
+
+.content-header {
+  color:rgb(19, 46, 55);
+  display:block;
+  font-family:Net-Lulo-Clean-W01-One-Bold;
+  font-size:26px;
+  font-style:normal;
+  font-weight:500;
+  height:50px;
+  letter-spacing:8.4px;
+  line-height:50.4px;
+  
+  margin-block-start:-13.65px;
+  margin-bottom:0px;
+  margin-left: 350px;
+  margin-top:-13.65px;
+  text-align:left;
+  text-size-adjust:100%;
+  text-transform:uppercase;
+  transition-delay:0s;
+  transition-duration:0.2s;
+}
+
+.product-list > ul {
+  display: flex;
+  
+  border: 2px solid red;
+}
+
+
+.product-image {
+  border: 2px solid blue;
+  width: auto;
+  height: 80px;
+}
+
+.product-item {
+  
+  border: 2px solid black;
+  color:rgb(28, 27, 27);
+  cursor:grab;
+
+
+  height:374.75px;
+  width:200.75px;   
+  margin-top: 40px;
+
+  // display:block;
+  // font-family:"Nunito Sans", sans-serif;
+  // font-size:14px;
+  // font-style:normal;
+  // font-weight:400;
+  
+  // line-height:23.1px;
+  // text-align:center;
+  // text-size-adjust:100%;
+  // user-select:none;
+  // visibility:visible;
+  // white-space:normal;
+  
+  // margin: none;
+
+}
+.product-button {
+    background-color:rgb(39, 93, 110);
+    width: 160px;
+    height: 43px;
+    color: azure;
+    font-family:Montserrat, sans-serif;
+    outline: none;
+    border-style: none;
+    margin-left: 20px;
+    margin-top: 180px;
+}

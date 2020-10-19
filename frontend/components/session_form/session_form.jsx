@@ -52,6 +52,8 @@ class SessionForm extends React.Component {
               <p className="login-form-instructions">Please enter your e-mail and password:</p>
             </header>
 
+            {this.renderErrors()}
+
             <div className="login-form-item">
               <label className="login-floating-label">Username</label>
               <input 
@@ -82,7 +84,7 @@ class SessionForm extends React.Component {
 
             <button className="login-button">Login</button>
             <div className="form-hint">
-              <span> Don't have an account?</span>
+              <span> Don't have an account? </span>
               <Link to="/signup">Create One</Link>
             </div>
 

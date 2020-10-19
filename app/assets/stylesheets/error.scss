@@ -1,15 +1,11 @@
 .error-container {
-
+position: relative;
 color:rgb(28, 27, 27);
 display:block;
 font-style:normal;
 font-weight:400;
 height:124px;
 line-height:23.1px;
-margin-bottom:0px;
-margin-left:135.5px;
-margin-right:135.5px;
-margin-top:0px;
 max-width:983px;
 padding-bottom:0px;
 padding-left:0px;
@@ -17,6 +13,9 @@ padding-right:0px;
 padding-top:0px;
 text-align:center;
 text-size-adjust:100%;
+
+top: 280px;
+margin: auto;
 }
 
 .error-404 {

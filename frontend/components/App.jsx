@@ -10,8 +10,10 @@ import {
 import SplashContainer from './splash/splash_container'
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
+import ProductsIndexContainer from './product/products_index_container'
 import Error from './error/error';
-import Modal from './modal/modal';
+
+import Modal from './modal/modal.jsx'
 
 import Navbar from './navbar/navbar';
 
@@ -33,6 +35,7 @@ const App = () => {
         <Redirect to="/error"/>
       </Switch>
       <Modal />
+
     </div>
   )
 }; 

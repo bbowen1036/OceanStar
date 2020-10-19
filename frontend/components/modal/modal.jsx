@@ -1,7 +1,7 @@
 import React from "react";
-import PopUp from "./modal";
+import PopUp from "./modal_popup";
 
-export default class Modal extends React.Component {
+class Modal extends React.Component {
   constructor(props){
     super(props);
 
@@ -21,8 +21,8 @@ export default class Modal extends React.Component {
   render() {
     return (
       <div>
-        <div onClick={this.togglePop} className="btn">
-          <button >Modal</button>
+        <div onClick={this.togglePop} >
+          <button className="modalBtn">&#128075;</button>
         </div>
 
         {this.state.seen ? <PopUp toggle={this.togglePop} /> : null}
@@ -30,3 +30,5 @@ export default class Modal extends React.Component {
     );
   }
 }
+
+export default Modal;

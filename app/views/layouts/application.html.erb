@@ -7,6 +7,9 @@
 
 
     <script> 
+      window.modalImg = "<%= image_url("brian.jpg") %>"
+    </script>
+    <script> 
       window.loginImg = "<%= image_url("login-icon.png") %>"
     </script>
     <script> 
@@ -35,8 +38,7 @@
     <%= javascript_include_tag 'application' %>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
-
-    <% if current_user %>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap" rel="stylesheet">    <% if current_user %>
         <script>
           window.currentUser = { 
             "id": <%= current_user.id %>,
