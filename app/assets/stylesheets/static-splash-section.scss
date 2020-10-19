@@ -1,19 +1,23 @@
 .static-splash-container {
 
-  border: 3px solid blue;
+  // border: 3px solid blue;
 
   height: 650px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
+  img {
+    height: 305px;
+  }
 }
 
 .static-splash-container > div {
 
-  border: 1px solid red;
+  // border: 1px solid red;
   text-align: center;
   font-family:"Nunito Sans", sans-serif;
   margin: auto;
+  // margin: 0;
   // border: 2px solid red;
   // height: 325px;
   // width: 380px;
@@ -28,4 +32,6 @@
 .static-splash-text > h2 {
   margin-bottom: 14px;;
 }
+
+
 
