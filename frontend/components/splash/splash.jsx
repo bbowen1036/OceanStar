@@ -8,7 +8,7 @@ const Splash = ({currentUser, logout}) => {
 
   return (
     <div>
-      <img src="https://oceanstar-seed.s3-us-west-1.amazonaws.com/splash-oyster.jpeg" className="nav-splash-img"/>
+      <img src="https://oceanstar-seed.s3-us-west-1.amazonaws.com/splash-oyster2.jpeg" className="nav-splash-img"/>
       <header className="nav-bar">
         <div className="splash-carousel-title">
           <header className="splash-header">

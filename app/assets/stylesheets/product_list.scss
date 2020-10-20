@@ -69,6 +69,7 @@
   width:200.75px;   
 
 }
+
 .product-button {
     background-color:rgb(39, 93, 110);
     width: 160px;
@@ -77,8 +78,13 @@
     font-family:Montserrat, sans-serif;
     outline: none;
     border-style: none;
+    transition-duration: 0.45s;
 }
 
+.product-button:hover {
+   background-color:rgba(39, 93, 110, 0.596);
+  
+}
 
 
 .product-item-info{
@@ -110,3 +116,7 @@
   margin-bottom: 7px;
   width: 158px;
  }
+
+//  div {
+//    color: rgba(19, 18, 18, 0.849);
+//  }

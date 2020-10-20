@@ -20,13 +20,13 @@ const ProductIndexItem = ({ product }) => {
             <NavLink to={{ 
               pathname: '/fish',
               aboutProps:{ product }
-            }} >
+            }} style={{ textDecoration: 'none', color: 'rgba(19, 18, 18, 0.849)', font: 'Avenir', fontSize: '14px'}}>
               <h3>{product.name}</h3>
             </NavLink>
 
           </div>
           <div className='product-price'>
-            <h4>{product.price}</h4>
+            <h4>${product.price}</h4>
           </div>
           {/* <div> */}
             <button className="product-button">Add To Cart</button>

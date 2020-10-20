@@ -17,17 +17,19 @@ class PopUp extends React.Component {
 
       <div className="modal-container">
         <div className="modal-face">
-          <h2><span>Hi There &#128075;</span></h2>
-          <button >&#x2C5;</button>
+          <h2><span>Hi There!</span></h2>
+           <h4>Welcome to <span className="modal-oceanstar">Ocean Star Seafood.</span></h4>
+          {/* <button >&#x2C5;</button> */}
+           <br></br>
           <div className="headwrap">
           <p>
-            <span>Welcome to Ocean Star Seafood. Please send me a message with any questions you have!</span>
+            <span>Please check out my GitHub and LinkedIn pages to learn more about me. Thank you for visiting!</span>
           </p>
             <img className="headshot" src={window.modalImg} alt=""/>
           </div>
         </div>
         <div className="modal-input">
-          <div><textarea className="txt-area"></textarea></div>
+          <div><textarea className="txt-area" placeholder="Send me a message..."></textarea></div>
         </div>
 
         <button className="modal-collapse">&#10146;</button>

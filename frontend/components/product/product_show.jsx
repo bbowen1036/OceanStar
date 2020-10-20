@@ -13,6 +13,8 @@ const ProductShowItem = (props ) => {
         <div className="show-product-meta">
           <h2>Ocean Star Seafood</h2>
           <h1>{props.location.aboutProps.product.name}</h1>
+          <div className="show-price">${props.location.aboutProps.product.price}</div>
+          <div><p className="show-description">{props.location.aboutProps.product.description}</p></div>
         </div>
         <div className="show-product-form">
           <label>Quantity:</label>

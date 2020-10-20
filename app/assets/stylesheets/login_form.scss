@@ -194,18 +194,24 @@
  }
 
  .login-button {
-  background-color: #3B8CA5;
+  // background-color: #3B8CA5;
   width: 400px;
   height: 43px;
   color: azure;
   font-family:Montserrat, sans-serif;
-  // outline: none;
+  outline: none;
+
+  
+  background: linear-gradient(to left, #3B8CA5 0%, lightblue 50%, white 100%) right;
+  transition: .45s ;
+  background-size: 1000%
+
 }
 
 .login-button:hover {
-  transform: 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  background-color: rgb(253, 253, 252);
   color: black;
+  background-position: left;
+
  }
  
 .form-hint{
