@@ -1,14 +1,26 @@
 import React from 'react';
 
-const ProductShowItem = ( {product} ) => {
+const ProductShowItem = (props ) => {
+  // debugger
+
+  console.log(props.location.aboutProps)
+  
   return (
 
-    <div>
-      <h1>product</h1>
-
-
+    <div className="show-container">
+      <div><img src={props.location.aboutProps.product.photo_url} alt=""/></div>
+      <div className='show-description'>
+        <div className="show-product-meta">
+          <h2>Ocean Star Seafood</h2>
+          <h1>{props.location.aboutProps.product.name}</h1>
+        </div>
+        <div className="show-product-form">
+          <label>Quantity:</label>
+          <input type="number" min="1" max="100" placeholder="1"/>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
     </div>
-
   )
 
 };

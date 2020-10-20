@@ -23,7 +23,7 @@ const StaticSplashSection = () => {
       <div className="static-splash-text">
         <h2>DELIVERED TO YOUR DOOR</h2>
         <span><p>Same-day & next-day contactless delivery is available in the SF Bay Area with our refrigerated trucks. National flat-rate shipping.</p></span>
-        <button>DELIVERY & SHIPPING</button>
+        <button className="splash-static-btn">DELIVERY & SHIPPING</button>
         <h6>Or pickup at 1315 Egbert Ave. between 9am-12pm.</h6>
       </div>
     </section>
