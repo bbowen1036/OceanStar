@@ -3,7 +3,8 @@ class ApplicationController < ActionController::Base
     ## C  R  L  L  L 
 
     helper_method :current_user, :logged_in?
-  
+    # before_action :current_user, :current_shopping_cart
+
     def current_user
       @current_user ||= User.find_by(session_token: session[:session_token])
     end
@@ -24,4 +25,22 @@ class ApplicationController < ActionController::Base
       current_user.reset_session_token! if logged_in?
       session[:session_token] = nil
     end
+
+    def current_shopping_cart 
+      if logged_in? 
+        @cart = @current_user.cart
+      else
+        if session[:cart]
+          @cart = Cart.find(session[:cart])
+        else
+          @cart = Cart.create
+          session[:cart] = @cart.id
+        end
+      end
+    end
+
+
+
+    
+
 end

@@ -15,30 +15,18 @@
 
 User.delete_all
 Product.delete_all
+CartItem.delete_all
+Cart.delete_all
+# ShoppingCart.delete_all
 
-u1 = User.create!(
-  username: 'Brian',
-  password: 'password',
-  email: 'user1@aa.io'
-)
+ActiveRecord::Base.connection.tables.each do |t|
+  ActiveRecord::Base.connection.reset_pk_sequence!(t)
+end
 
-u2 = User.create!(
-  username: 'John',
-  password: 'password',
-  email: 'user2@aa.io'
-)
-
-u3 = User.create!(
-  username: 'Jill',
-  password: 'password',
-  email: 'user3@aa.io'
-)
-
-u4 = User.create!(
-  username: 'Jenn',
-  password: 'password',
-  email: 'user4@aa.io'
-)
+u1 = User.create!( username: 'Brian', password: 'password', email: 'user1@aa.io')
+u2 = User.create!( username: 'John', password: 'password', email: 'user2@aa.io')
+u3 = User.create!( username: 'Jill', password: 'password', email: 'user3@aa.io')
+u4 = User.create!( username: 'Jenn', password: 'password', email: 'user4@aa.io')
 
 # Products
 product1 = Product.create!( name: "Local Wild King Salmon 2PC 6OZ Portions", price: "23.95", description: "Help us support our local fishermen and eat the very best salmon around! Sushi-Grade", category_id: "1")
@@ -104,3 +92,26 @@ file19 = open("https://oceanstar-seed.s3-us-west-1.amazonaws.com/kampachi.jpg")
   product19.photo.attach(io: file19, filename: 'img-kampachi')
 file20 = open("https://oceanstar-seed.s3-us-west-1.amazonaws.com/jonahcrab.jpg")
   product20.photo.attach(io: file20, filename: 'img-jonahcrab')
+
+
+
+
+# Carts
+cart1 = Cart.create!
+cart2 = Cart.create!
+cart3 = Cart.create!
+
+# CartItems
+
+c1 = CartItem.create!( product_id: 3, quantity: 2, customer_id: 3, cart_id: 2)
+c2 = CartItem.create!( product_id: 4, quantity: 2, customer_id: 3, cart_id: 2)
+c3 = CartItem.create!( product_id: 8, quantity: 4, customer_id: 1, cart_id: 2)
+# c4
+# c5
+# c6
+# c7
+# c8
+# c9
+# c10
+# c11
+# c12

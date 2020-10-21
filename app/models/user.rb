@@ -3,6 +3,7 @@
 # Table name: users
 #
 #  id              :bigint           not null, primary key
+#  cart_token      :string
 #  email           :string           not null
 #  password_digest :string           not null
 #  session_token   :string           not null
@@ -21,7 +22,21 @@ class User < ApplicationRecord
   validates :username, :email, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
-  after_initialize :ensure_session_token
+  has_many :products
+
+  has_many :cart_items, 
+    foreign_key: :customer_id,
+    class_name: :CartItem
+
+
+    belongs_to :cart_item,
+        foreign_key: :cart_token,
+        class_name: :CartItem
+
+
+
+
+  after_initialize :ensure_session_token, :ensure_cart_token
     ## S P I R E
 
     attr_reader :password 
@@ -50,4 +65,17 @@ class User < ApplicationRecord
     def ensure_session_token
         self.session_token ||= SecureRandom::urlsafe_base64
     end
+
+
+    def reset_cart_token!
+        self.cart_token = SecureRandom::urlsafe_base64
+        self.save!
+        self.cart_token
+    end
+
+    def ensure_cart_token
+        self.cart_token ||= SecureRandom::urlsafe_base64
+    end
+
+
 end

@@ -7,22 +7,25 @@ import {
   HashRouter
 } from 'react-router-dom';
 
-import SplashContainer from './splash/splash_container'
+import SplashContainer from './splash/splash_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
-import ProductsIndexContainer from './product/products_index_container'
+import ProductsIndexContainer from './product/products_index_container';
 import ProductShowItem from './product/product_show';
 import Error from './error/error';
 
-import Modal from './modal/modal.jsx'
+import Modal from './modal/modal.jsx';
 import Navbar from './navbar/navbar';
+
 
 import { 
   AuthRoute,
   ProtectedRoute
 } from '../util/route_util';
 
-const App = () => {
+class App extends React.Component {
+  render () {
+  
   return (
     <div>
       <Navbar />
@@ -37,9 +40,11 @@ const App = () => {
         <Redirect to="/error"/>
       </Switch>
       <Modal />
+      
 
     </div>
   )
+  }
 }; 
 
 export default App; 
