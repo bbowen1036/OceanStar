@@ -21,6 +21,12 @@ class Product < ApplicationRecord
 
   has_one_attached :photo
 
-  has_many :cart_items
+  has_many :cart_items,
+    foreign_key: :product_id,
+    class_name: :CartItem
+
+  has_one :customer,
+    through: :cart_items,
+    source: :customer
     
 end

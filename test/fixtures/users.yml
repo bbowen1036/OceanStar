@@ -3,7 +3,7 @@
 # Table name: users
 #
 #  id              :bigint           not null, primary key
-#  cart_token      :string
+#  cart_token      :float
 #  email           :string           not null
 #  password_digest :string           not null
 #  session_token   :string           not null
@@ -13,6 +13,7 @@
 #
 # Indexes
 #
+#  index_users_on_cart_token     (cart_token)
 #  index_users_on_email          (email) UNIQUE
 #  index_users_on_session_token  (session_token) UNIQUE
 #  index_users_on_username       (username) UNIQUE

@@ -6,7 +6,7 @@ import ProductsIndex from './products'
 
 const mSTP = (state) => {
   return { 
-    products: Object.values(state.products)
+    products: Object.values(state.entities.products)
   }
 };
 

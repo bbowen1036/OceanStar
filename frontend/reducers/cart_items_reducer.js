@@ -2,8 +2,10 @@ import {
   REMOVE_ALL_CART_ITEMS, 
   RECEIVE_CART_ITEM, 
   RECEIVE_CART_ITEMS, 
-  REMOVE_CART_ITEM 
+  REMOVE_CART_ITEM, 
 } from '../actions/cart_item_actions';
+
+import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 
 
 const cartItemsReducer = (state={}, action) => {
@@ -21,11 +23,13 @@ const cartItemsReducer = (state={}, action) => {
             return action.allCartItems
         case REMOVE_ALL_CART_ITEMS:
             return {}
+        case RECEIVE_CURRENT_USER:
+            return action.payload.cartItems
         default:
             return state
     }
 };
 
-export default cartItemsReducer
+export default cartItemsReducer;
 
 

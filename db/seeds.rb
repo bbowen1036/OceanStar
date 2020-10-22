@@ -97,18 +97,18 @@ file20 = open("https://oceanstar-seed.s3-us-west-1.amazonaws.com/jonahcrab.jpg")
 
 
 # Carts
-cart1 = Cart.create!
-cart2 = Cart.create!
-cart3 = Cart.create!
+# cart1 = Cart.create!
+# cart2 = Cart.create!
+# cart3 = Cart.create!
 
-# CartItems
+# # CartItems
 
-c1 = CartItem.create!( product_id: 3, quantity: 2, customer_id: 3, cart_id: 2)
-c2 = CartItem.create!( product_id: 4, quantity: 2, customer_id: 3, cart_id: 2)
-c3 = CartItem.create!( product_id: 8, quantity: 4, customer_id: 1, cart_id: 2)
-# c4
-# c5
-# c6
+# c1 = CartItem.create!( product_id: 3, quantity: 2, customer_id: 3, cart_id: 2)
+# c2 = CartItem.create!( product_id: 4, quantity: 2, customer_id: 3, cart_id: 2)
+# c3 = CartItem.create!( product_id: 8, quantity: 4, customer_id: 1, cart_id: 2)
+# # c4
+# # c5
+# # c6
 # c7
 # c8
 # c9
