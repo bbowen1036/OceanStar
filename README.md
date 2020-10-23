@@ -10,7 +10,7 @@
   <a href="#about">About</a> •
   <a href="#technologies">Technologies</a> •
   <a href="#features">Features</a> •
-  <a href="#Future_Implementations">Future Implementations</a> •
+  <a href="#future">Future Implementations</a> •
   <a href="#wiki">Wiki</a> •
   <a href="#author">Author</a> •
 </p>
