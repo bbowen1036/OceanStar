@@ -1,9 +1,7 @@
 import React from 'react';
 
 const ProductShowItem = (props ) => {
-  // debugger
-
-  // console.log(props.location.aboutProps)
+ 
   
   return (
 

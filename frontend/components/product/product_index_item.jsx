@@ -9,9 +9,7 @@ import Cart from '../shopping_cart/cart_container'
 class ProductIndexItem extends React.Component {
 
   handleClick(product) {
-    // console.log('Ive been clicked')
-    // console.log(product)
-    
+   
     
   }
 

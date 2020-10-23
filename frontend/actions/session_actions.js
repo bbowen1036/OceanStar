@@ -35,7 +35,7 @@ export const clearErrors = () => {
 
 export const createNewUser = (newUser) => dispatch => {
   return (
-    // debugger
+    
       APIUtil.signup(newUser)
           .then(payload => dispatch(receiveCurrentUser(payload)))
           .fail(errors => dispatch(receiveErrors(errors.responseJSON)))

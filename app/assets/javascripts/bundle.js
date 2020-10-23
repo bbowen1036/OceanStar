@@ -307,13 +307,11 @@ var clearErrors = function clearErrors() {
 };
 var createNewUser = function createNewUser(newUser) {
   return function (dispatch) {
-    return (// debugger
-      _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__["signup"](newUser).then(function (payload) {
-        return dispatch(receiveCurrentUser(payload));
-      }).fail(function (errors) {
-        return dispatch(receiveErrors(errors.responseJSON));
-      })
-    );
+    return _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__["signup"](newUser).then(function (payload) {
+      return dispatch(receiveCurrentUser(payload));
+    }).fail(function (errors) {
+      return dispatch(receiveErrors(errors.responseJSON));
+    });
   };
 };
 var logoutUser = function logoutUser() {
@@ -863,9 +861,7 @@ var ProductIndexItem = /*#__PURE__*/function (_React$Component) {
 
   _createClass(ProductIndexItem, [{
     key: "handleClick",
-    value: function handleClick(product) {// console.log('Ive been clicked')
-      // console.log(product)
-    }
+    value: function handleClick(product) {}
   }, {
     key: "render",
     value: function render() {
@@ -929,8 +925,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ProductShowItem = function ProductShowItem(props) {
-  // debugger
-  // console.log(props.location.aboutProps)
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "show-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1726,8 +1720,7 @@ var CartItem = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var product = this.props.product; // console.log(product)
-
+      var product = this.props.product;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "cart-content"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
