@@ -11,7 +11,8 @@ class SessionForm extends React.Component {
       email: ""
     };
 
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
   
   componentDidMount () {
@@ -37,6 +38,55 @@ class SessionForm extends React.Component {
     );
   }
 
+  demoLogin(e) {
+    this.setState({
+      username: 'Brian',
+      email: 'user1@aa.io',
+      password: 'password'
+    });
+    window.setTimeout(() => this.handleSubmit(e), 500);
+  }
+
+
+
+
+
+
+
+
+//   demoLogin(e) {
+//     e.preventDefault();
+//     // this.props.clearErrors();
+//     let login = this.props.loginUser ? this.props.loginUser : this.props.processForm;
+//     let that = this;
+//     let count = 0;
+//     let demo = 'guestUsergonefishin@aol.compassword';
+//     if (this.demo) return;
+//     this.setState({
+//         username: '',
+//         email: '',
+//         password: ''
+//     });
+
+//     this.demo = setInterval(() => {
+//         let type = count < 17 ?'email' : 'password';
+//         that.setState({ [type]: that.state[type] + demo[count] });
+//         count++;
+//         if (count === 25) {
+//             clearInterval(this.demo)
+//             login({
+//                 username: 'guestUser',
+//                 email: 'gonefishin@aol.com',
+//                 password: 'password'
+//             })
+//         }
+//     }, 50)
+// }
+
+
+
+
+
   handleSubmit(e) {
     e.preventDefault();
     this.props.processForm(this.state)
@@ -53,6 +103,7 @@ class SessionForm extends React.Component {
 
             <header className="form-header">
               <h1 className="form-header-title">LOGIN</h1>
+              <p id="demo-login" onClick={(e) => this.demoLogin(e)}>Demo Login</p>
               <p className="login-form-instructions">Please enter your e-mail and password:</p>
             </header>
 

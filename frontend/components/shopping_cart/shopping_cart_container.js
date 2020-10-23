@@ -1,12 +1,12 @@
 import React from 'react';
+import {getCartItem} from '../../actions/cart_item_actions';
+import CartItem from './cart_item'
 
 class SideCart extends React.Component {
-
   constructor(props){
     super(props)
     this.state = props.state
-
-    this.togglePop = this.togglePop.bind(this)
+   this.togglePop = this.togglePop.bind(this)
   }
   
   togglePop() {
@@ -17,7 +17,34 @@ class SideCart extends React.Component {
 
   
 
+  emptyCart(){
+    return (
+      <div>
+          <h1 className="header">Your Cart</h1>
+          <div className="buy-page">
+              <div className="empty-cart-div">
+                  <div className="header">Thanks for checking out Toasty!</div>
+              </div>
+          </div>
+      </div>
+  )
+  }
+
+
+
+
+
+
+
   render() {
+
+    const  cartItems  = Object.values(this.props.cartItems);
+    
+    
+
+    const item = cartItems.map(cartItem => <CartItem key={cartItem.id} quantity={cartItem.quantity}  product={cartItem.product} />)
+
+
     return (
       <div className="sidecart-container">
         <header className="sidecart-header"> 
@@ -31,7 +58,7 @@ class SideCart extends React.Component {
 
         <main className="sidecart-main">
           <div>
-            Navel Oranges
+            {item}
           </div>
         </main>
 

@@ -1,9 +1,15 @@
 import React, { Component } from "react";
+import {connect } from 'react-redux';
+import {} from '../../actions/session_actions'
 
 class PopUp extends React.Component {
   constructor(props){
-    super(props)
+    super(props);
+    this.state = {
+      currentUser: this.props.currentUser.username
+    };
   }
+
   
   handleClick() {
     // e.preventDefault()
@@ -11,15 +17,14 @@ class PopUp extends React.Component {
   };
 
   render() {
+    const currUser = this.props.currentUser? <h2><span>Hi There { this.props.currentUser.username }!</span></h2> : <h2><span>Hi There!</span></h2>
     return (
     <div>
-         {/* <img className="headshot" src={window.modalImg} alt=""/> */}
 
       <div className="modal-container">
         <div className="modal-face">
-          <h2><span>Hi There!</span></h2>
+          {currUser}
            <h4>Welcome to <span className="modal-oceanstar">Ocean Star Seafood.</span></h4>
-          {/* <button >&#x2C5;</button> */}
            <br></br>
           <div className="headwrap">
           <p>
@@ -39,5 +44,14 @@ class PopUp extends React.Component {
   };
 };
 
-export default PopUp;
+const mSTP = ({ session, entities: { users } }) => {
+  
+  const currentUser = users[session.id];
+  return {
+      currentUser,
+  }
+};
+
+
+export default connect(mSTP, null)(PopUp);
 

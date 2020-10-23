@@ -24,7 +24,7 @@ const cartItemsReducer = (state={}, action) => {
         case REMOVE_ALL_CART_ITEMS:
             return {}
         case RECEIVE_CURRENT_USER:
-            return action.payload.cartItems
+            return Object.assign(newState, action.payload.cartItems)
         default:
             return state
     }

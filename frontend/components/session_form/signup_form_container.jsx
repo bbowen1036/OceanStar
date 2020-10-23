@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createNewUser, clearErrors } from '../../actions/session_actions';
+import { createNewUser, receiveErrors } from '../../actions/session_actions';
 import SignupForm from './signup_form';
 import { Link } from 'react-router-dom';
 import React from 'react';
@@ -15,7 +15,7 @@ const mSTP = ({errors}) => {
 const mDTP = dispatch => {
   return {
     processForm: user => dispatch(createNewUser(user)),
-    clearErrors: user => dispatch(clearErrors(user))
+    clearErrors: () => dispatch(receiveErrors([]))
   }
 };
 

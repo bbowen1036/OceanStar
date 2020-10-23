@@ -38,7 +38,7 @@ class SignupForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.processForm(this.state)
-      .then( () => this.props.history.push('/fish'));
+      .then( () => this.props.history.push('/'));
   }
 
   render() {

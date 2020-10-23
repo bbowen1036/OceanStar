@@ -10,13 +10,10 @@
 
 
 
-
-
-
 User.delete_all
 Product.delete_all
 CartItem.delete_all
-Cart.delete_all
+
 # ShoppingCart.delete_all
 
 ActiveRecord::Base.connection.tables.each do |t|
@@ -27,6 +24,8 @@ u1 = User.create!( username: 'Brian', password: 'password', email: 'user1@aa.io'
 u2 = User.create!( username: 'John', password: 'password', email: 'user2@aa.io')
 u3 = User.create!( username: 'Jill', password: 'password', email: 'user3@aa.io')
 u4 = User.create!( username: 'Jenn', password: 'password', email: 'user4@aa.io')
+guest = User.create!( username: 'guestUser', password: 'password', email: 'gonefishin@aol.com')
+
 
 # Products
 product1 = Product.create!( name: "Local Wild King Salmon 2PC 6OZ Portions", price: "23.95", description: "Help us support our local fishermen and eat the very best salmon around! Sushi-Grade", category_id: "1")
@@ -94,24 +93,10 @@ file20 = open("https://oceanstar-seed.s3-us-west-1.amazonaws.com/jonahcrab.jpg")
   product20.photo.attach(io: file20, filename: 'img-jonahcrab')
 
 
+# CART Items
 
-
-# Carts
-# cart1 = Cart.create!
-# cart2 = Cart.create!
-# cart3 = Cart.create!
-
-# # CartItems
-
-# c1 = CartItem.create!( product_id: 3, quantity: 2, customer_id: 3, cart_id: 2)
-# c2 = CartItem.create!( product_id: 4, quantity: 2, customer_id: 3, cart_id: 2)
-# c3 = CartItem.create!( product_id: 8, quantity: 4, customer_id: 1, cart_id: 2)
-# # c4
-# # c5
-# # c6
-# c7
-# c8
-# c9
-# c10
-# c11
-# c12
+cartItem1 = CartItem.create!( product_id: 5, quantity: 3, customer_id: 1 )
+cartItem2 = CartItem.create!( product_id: 10, quantity: 1, customer_id: 1 )
+cartItem3 = CartItem.create!( product_id: 14, quantity: 7, customer_id: 1 )
+cartItem4 = CartItem.create!( product_id: 7, quantity: 2, customer_id: 1 )
+cartItem5 = CartItem.create!( product_id: 9, quantity: 6, customer_id: 1 )

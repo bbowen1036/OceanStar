@@ -4,7 +4,7 @@ import SessionForm from './session_form';
 import { 
   createNewUser,
   logoutUser, 
-  clearErrors, 
+  receiveErrors, 
   loginUser 
 } from '../../actions/session_actions';
 
@@ -18,7 +18,7 @@ const mSTP = ({ errors }) => {
 const mDTP = dispatch => {
   return {
     processForm: (user) => dispatch(loginUser(user)),
-    clearErrors: user => dispatch(clearErrors(user))
+    clearErrors: () => dispatch(receiveErrors([]))
   }
 };
 

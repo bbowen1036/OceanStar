@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Cart from '../shopping_cart/cart'
+import Cart from '../shopping_cart/cart_container'
 
 
 class Navbar extends React.Component {
@@ -100,8 +100,6 @@ render() {
         <ul>
           <li>
             <Cart/>
-            {/* <Link to='/cart'>&#128722;</Link> */}
-            <span>2</span>
           </li>
 
           <li>

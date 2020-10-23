@@ -1,4 +1,5 @@
  .header-wrapper {
+  //  .header-wrapper:after {
   display:flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -9,8 +10,8 @@
   position:sticky;
   top:0px;
   z-index:5;
-  background-color: white;
-  opacity: 85%;
+  background-color: rgba(255, 255, 255, 0.787);
+  // opacity: 85%;
   font-family: Net-Lulo-Clean-W01-One-Bold;
   font-size:9px;
   border-bottom: solid 1px rgb(184, 181, 181);

@@ -3,12 +3,12 @@ import React from 'react';
 const ProductShowItem = (props ) => {
   // debugger
 
-  console.log(props.location.aboutProps)
+  // console.log(props.location.aboutProps)
   
   return (
 
     <div className="show-container">
-      <div><img src={props.location.aboutProps.product.photo_url} alt=""/></div>
+      <div><img src={props.location.aboutProps.product.photo_url} /></div>
       <div className='show-description'>
         <div className="show-product-meta">
           <h2>Ocean Star Seafood</h2>

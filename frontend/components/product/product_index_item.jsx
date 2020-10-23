@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import {connect} from 'react-redux'
-import Cart from '../shopping_cart/cart'
+import Cart from '../shopping_cart/cart_container'
 
 
 
@@ -10,7 +10,7 @@ class ProductIndexItem extends React.Component {
 
   handleClick(product) {
     // console.log('Ive been clicked')
-    console.log(product)
+    // console.log(product)
     
     
   }
