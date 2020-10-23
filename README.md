@@ -10,12 +10,9 @@
   <a href="#about">About</a> •
   <a href="#technologies">Technologies</a> •
   <a href="#features">Features</a> •
+  <a href="#future fmplementations">Future Implementations</a> •
   <a href="#wiki">Wiki</a> •
-  <a href="#contributing">Contributing</a> •
   <a href="#author">Author</a> •
-  <a href="#support">Support</a> •
-  <a href="#donate">Donate</a> •
-  <a href="#license">License</a>
 </p>
 
 
@@ -52,10 +49,22 @@
 
 ## Features
 
-* Secure backend to frontend User Authentication 
-* Products: Users are able to view products by category, as well as click product to view more information
-  * Products show and index pages styled with rich CSS
-* Shopping Cart: Users Can add products to their Shopping Cart
+* **User Authentication**: Secure backend to frontend User Authentication with proper error messaging
+* **Products**: Users directed to product index page where they could click an image to view more information   
+  * Product's show and index pages styled with rich CSS
+* **Shopping Cart**: Users Can add products to their Shopping Cart
   * If an item has already been added to the quantity of the item will update
   * Users can edit their shopping cart which will automatically update price totals 
+* **Modal**: Interactive pop-up modal that greets User upon sign in 
+
+
+## Future Implementations
+* Product Categories
+  * View products by categories
 * Search: Users can search for products by product name 
+* E-mail Subscription
+
+## Wiki
+  Please check out my wiki documentation for more information the [wiki](https://github.com/bbowen1036/OceanStar/wiki).
+  
+## Author
