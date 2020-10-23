@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom';
 import Cart from '../shopping_cart/cart_container'
 
 
-class Navbar extends React.Component {
+const Navbar = ({currentUser, logout}) => {
 
-render() {
 
-  const {currentUser, logout, login, register} = this.props
+
+
+
+  // const {currentUser} = this.props
+  
 
   const display = currentUser ? (
     <div>
@@ -17,7 +20,6 @@ render() {
     </div>
   ) : (
     <div>
-      {/* <Link className="btn" to="/signup">Sign Up</Link> */}
       <Link className="btn" to="/login">Log In</Link>
     </div>
   );
@@ -105,15 +107,11 @@ render() {
           <li>
             <img className="login-icon" src={window.loginImg} alt=""/>
           </li>
-          <li>{display}</li>
+          <li >{display}</li>
         </ul>
-      </div>
-      
-      
+      </div>      
     </div>
-
     )
-}
 
 };
 

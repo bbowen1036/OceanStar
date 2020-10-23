@@ -10,12 +10,12 @@ const mSTP = ({session, entities: {users}}) => {
   }
 };
 
-const mDTP = dispatch => {
-  return{
+const mDTP = dispatch => ({
+  
     logout: () => dispatch(logoutUser()),
-    login: (user) => dispatch(loginUser(user)),
-    register: (user) => dispatch(createNewUser(user))
-  }
-};
+    // login: (user) => dispatch(loginUser(user)),
+    // register: (user) => dispatch(createNewUser(user))
+  
+});
 
 export default connect(mSTP, mDTP)(Navbar)

@@ -13,6 +13,7 @@ import LogInFormContainer from './session_form/login_form_container';
 import ProductsIndexContainer from './product/products_index_container';
 import ProductShowItem from './product/product_show';
 import Error from './error/error';
+import NavComp from './navbar/navbar_container'
 
 import Modal from './modal/modal.jsx';
 import Navbar from './navbar/navbar';
@@ -28,7 +29,7 @@ class App extends React.Component {
   
   return (
     <div>
-      <Navbar />
+      <NavComp />
       <Switch>
 
         <Route path='/error' component={Error} />
