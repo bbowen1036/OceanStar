@@ -629,15 +629,9 @@ var PopUp = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(PopUp);
 
   function PopUp(props) {
-    var _this;
-
     _classCallCheck(this, PopUp);
 
-    _this = _super.call(this, props);
-    _this.state = {
-      currentUser: _this.props.currentUser.username
-    };
-    return _this;
+    return _super.call(this, props);
   }
 
   _createClass(PopUp, [{

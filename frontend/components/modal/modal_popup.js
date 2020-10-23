@@ -5,9 +5,6 @@ import {} from '../../actions/session_actions'
 class PopUp extends React.Component {
   constructor(props){
     super(props);
-    this.state = {
-      currentUser: this.props.currentUser.username
-    };
   }
 
   
