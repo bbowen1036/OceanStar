@@ -42,7 +42,7 @@
 |   [AWS S3](https://aws.amazon.com/s3/ "Amazon AWS")   |
 | [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript") |
 |   [Heroku](https://www.heroku.com/ "Heroku")   |
-|  [Postgres](https://www.postgresql.org/ "Postgres")  |
+|  [PostgreSQL](https://www.postgresql.org/ "Postgres")  |
 |    [Rails](https://rubyonrails.org/ "Rails")   |
 |    [React](https://reactjs.org/ "React")   |
 |    [Redux](https://redux.js.org/ "Redux")   |
