@@ -1,7 +1,7 @@
 # Ocean Star Seafood
 
 <h1 align="center">
-  <a href="https://oceanstar.herokuapp.com/#/">🐟 Ocean Star Seafood Live 🦀</a> 
+  <a href="https://ocean-star.herokuapp.com/#/">🐟 Ocean Star Seafood Live 🦀</a> 
 </h1>
   
 <h4 align="center">An online marketplace for fresh and sustainable seafood delivered right to your door.</h4>
